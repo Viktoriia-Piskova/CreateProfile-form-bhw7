@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style-profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <h1>Profile</h1>
+
+    <div id="profile-img">
+        <img src="/img/profile-picture.png" alt="Profile picture" title="Profile picture">
+    </div>
+
+    <form action="">
+
+
+        <input type="file" name="profile-picture" id="profile-picture">
+
+        <label for="lastName">Name</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="ukraine">Ukraine</option>
+            <option value="france">France</option>
+            <option value="usa">USA</option>
+        </select>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city">
+
+        <label for="ZipCode">Zip Code</label>
+        <input type="text" id="ZipCode" name="ZipCode">
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone">
+
+        <button type="submit">Update</button>
+
+    </form>
+</body>
+
+</html>
