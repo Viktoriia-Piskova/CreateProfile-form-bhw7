@@ -4,24 +4,51 @@
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 
+  body{
+      padding: 36px;
+      max-width: 570px;
+  }
+
   form input:focus{
     border: solid 3px blue;
 }
 
-form input {
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+form .two-columns, button {
+    grid-column: 1/ span 2;
+    
+}
+
+
+
+form input{
     display: block;
     border-color: #E4E4E4 solid 1px;
     height: 38px;
     width: 245px;
     border-radius: 6px;
-    margin: 10px;
     border-style: solid;
+}
+
+
+form .two-columns {
+    width: 500px;
+
+}
+
+
+input[type="email"]{
+    width: 500px;
 }
 
 form label {
     display: block;
 }
-[type="radio"] {
+#gender *{
     display: inline;
-    color: blue;
 }
