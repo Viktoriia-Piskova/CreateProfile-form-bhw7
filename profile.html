@@ -17,14 +17,14 @@
 
     <form action="">
 
-        <div id="profile-img">
+
+        <div id="upload-file">
+
             <img src="/img/profile-picture.png" width="80px" alt="Profile picture" title="Profile picture">
 
-        </div>
-        <div id="upload-file">
-            <label for="file"><input type="file" name="profile-picture" id="profile-picture">
-                <div id="photo-icon"><img src="img/icon-photo.png" width="14px" height="12px" alt="icon-photo"></div>Up
-                to 1 MB (300x300 px)</label>
+            <label><input type="file" name="profile-picture" id="profile-picture">
+                <img src="img/icon-photo.png" width="14px" height="12px" alt="icon-photo">
+            </label>
 
             <div id="deleteFile"><img src="img/iconTrash.svg" alt="iconTrash"></div>
 
@@ -45,6 +45,7 @@
 
             <label for="country">Country</label>
             <select name="country" id="country">
+                <option id="default-select" value="none">Select</option>
                 <option value="ukraine">Ukraine</option>
                 <option value="france">France</option>
                 <option value="usa">USA</option>

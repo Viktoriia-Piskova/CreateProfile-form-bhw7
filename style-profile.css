@@ -5,6 +5,7 @@
 }
 
 /*general positioning and styling of elements*/
+
 body {
   max-width: 570px;
   padding: 15px;
@@ -15,70 +16,39 @@ form {
   background: #ffffff;
   border-radius: 6px;
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 255px 255px;
+  grid-template-rows: auto 87px 87px 77px;
 }
 
-form input {
+form input{
   display: block;
-  border: #e4e4e4 solid 2px;
+  border: #e4e4e4 solid 1px;
   height: 38px;
   width: 245px;
   border-radius: 6px;
-  margin: 10px;
+  margin: 5px;
 }
-
-
-
 
 #profile-img {
     margin: 10px;
 }
-/* styles for upload file part */
-#upload-file {
-    display: flex;
-    position: relative;
+
+h1{
+  font-size: 24px;
+  font-weight: 600;
 }
 
-#photo-icon{
-position: absolute;
-top: 10px;
-left: 10px;
-width: 138px;
-}
+/* general special effects*/
 
-#deleteFile{
-    width: 30px;
-    height: 30px;
-    padding: 9px 9px;
-    display: inline-table;
-    position: absolute;
-    left: 148px;
+form input:hover {
+  border: solid 2px grey;
 }
-
-#deleteFile img{
-    margin: auto;
-}
-
-#upload-file div {
- 
-  background: #ffffff;
-  border: 1px solid #e4e4e4;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  height: 30px;
-  
-}
-/*styles of every element separately*/
-form label {
-  display: block;
-}
-
-/*special effects*/
 
 form input:focus {
-  border: solid 3px blue;
+  border: solid 2px blue;
 }
+
+
 form label {
   margin: 7px;
 }
@@ -92,3 +62,113 @@ button {
   color: #ffffff;
   margin: 10px;
 }
+
+button:hover{
+  background-color: darkblue;
+}
+
+button:active{
+  background-color: grey;
+}
+
+/* styles for upload file part */
+
+#upload-file {
+    position: relative;
+    grid-column-start: span 2;
+    display: flex;
+    align-items: flex-end;
+}
+
+#upload-file>label{
+  display:inline-block;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  width:138px;
+  height: 30px;
+  position: relative;
+
+}
+
+#upload-file>label:hover{
+  border: solid 2px grey;
+}
+
+#upload-file>label:active{
+  border: solid 2px blue;
+}
+
+
+#upload-file>img{
+  display: block;
+  margin: 20px;
+  margin-left: 0px;
+
+}
+
+#upload-file>label>img{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+#upload-file #profile-picture{
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+
+
+#deleteFile{
+    width: 30px;
+    height: 30px;
+    display: inline-table;
+    border: #e4e4e4 solid 1px;
+    border-radius: 6px;
+    margin: 7px 3px;
+}
+
+#deleteFile:hover{
+  border: solid 2px grey;
+}
+
+#deleteFile:active{
+  border: solid 2px blue;
+}
+
+#deleteFile>img{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+
+}
+
+
+
+/*styles of every element separately*/
+
+form label {
+  display: block;
+}
+
+#country, option {
+  display: block;
+  border: #e4e4e4 solid 1px;
+  height: 38px;
+  width: 245px;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+#country:hover{
+  border: solid 2px grey;
+}
+
+#country:active{
+  border: solid 2px blue;
+}
+
+
+
+
