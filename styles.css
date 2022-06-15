@@ -1,3 +1,5 @@
+/* general settings including hover  and active*/
+
 * {
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -9,27 +11,45 @@ body {
   max-width: 570px;
 }
 
-form input:focus {
-  border: solid 3px blue;
-}
-
 form {
   display: grid;
   grid-template-columns: auto auto;
-}
-
-form .two-columns,
-button {
-  grid-column: 1 / span 2;
+  row-gap: 20px;
+  column-gap: 12px;
 }
 
 form input {
   display: block;
-  border-color: #e4e4e4 solid 1px;
+  border: #e4e4e4 solid 1.5px;
   height: 38px;
   width: 245px;
   border-radius: 6px;
   border-style: solid;
+}
+
+form input:hover {
+  border: solid 1.5px rgb(5, 5, 5);
+}
+
+form input:focus {
+  border: solid 1.5px blue;
+}
+form label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0px;
+}
+
+/* styles for double width elements */
+
+form .two-columns,
+button {
+  grid-column: 1 / span 2;
 }
 
 form .two-columns {
@@ -40,11 +60,83 @@ input[type="email"] {
   width: 500px;
 }
 
+/* gender radio button with pseudo selectors*/
 
-
-form label {
-  display: block;
-}
 #gender * {
   display: inline;
+}
+
+#gender #male,
+#gender #female {
+  width: 5px;
+  height: 5px;
+}
+
+/* country select with hover and active*/
+select {
+  display: block;
+  border: #e4e4e4 solid 1.5px;
+  height: 38px;
+  width: 245px;
+  border-radius: 6px;
+  border-style: solid;
+}
+
+/* submit button styles */
+
+button {
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  height: 38px;
+  text-align: center;
+  color: white;
+}
+
+button:hover{
+    background-color: darkblue;
+}
+
+
+
+/* text under email, text in footer and horisontal line */
+
+.two-columns p{
+    color: #969696;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+body>p{
+    color: #969696;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 50px;
+    line-height: normal;
+}
+
+body>p a{
+    color: #007BFF;
+}
+
+hr{
+    display: block;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 2px;
+    width:500px;
+    background-color: #E4E4E4;
+}
+
+footer p{
+    color: #545454;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    line-height: normal;
+}
+
+footer p a{
+    color: #007BFF;
 }
