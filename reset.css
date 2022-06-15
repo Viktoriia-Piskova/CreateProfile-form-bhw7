@@ -47,6 +47,12 @@ blockquote, q {
 	quotes: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
