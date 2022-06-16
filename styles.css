@@ -71,9 +71,39 @@ input[type="email"] {
 #gender #female {
   width: 5px;
   height: 5px;
+  margin-right: 20px
 }
 
-/* country select with hover and active*/
+#gender>label{
+    position: relative;
+    margin-right: 30px;
+}
+
+#gender>label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px grey solid;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1px;
+}
+
+/* TODO: how to toggle ::before if checked? */
+
+#gender:checked ~ #gender>label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 6px blue solid;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1px;
+}
+
+/* country select with hover, active*/
 select {
   display: block;
   border: #e4e4e4 solid 1.5px;
@@ -82,6 +112,8 @@ select {
   border-radius: 6px;
   border-style: solid;
 }
+
+
 
 /* submit button styles */
 
