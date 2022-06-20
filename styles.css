@@ -170,6 +170,18 @@ footer p{
     line-height: normal;
 }
 
-footer p a{
+footer>p>a{
     color: #007BFF;
+}
+
+footer>a{
+  display: block;
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  height: 38px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 9px 0px;
 }
