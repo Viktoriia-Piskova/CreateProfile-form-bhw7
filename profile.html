@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+<body>
+    <h1>Profile</h1>
+
+
+
+    <form action="">
+
+
+        <div id="upload-file">
+
+            <img src="./img/profile-picture.png" width="80px" alt="profile-picture" title="Profile picture">
+
+            <label><input type="file" name="profile-picture" id="profile-picture">
+                <img src="img/icon-photo.png" width="14px" height="12px" alt="icon-photo">
+                <p>Up to 1 MB (300x300 px)</p>
+            </label>
+
+            <div id="deleteFile"><img src="img/iconTrash.svg" alt="iconTrash"></div>
+
+        </div>
+
+        <div>
+
+            <label for="lastName">Name</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+        <div>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div>
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option id="default-select" value="none">Select</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="france">France</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+        </div>
+
+        <div>
+            <label for="ZipCode">Zip Code</label>
+            <input type="text" id="ZipCode" name="ZipCode">
+        </div>
+
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+
+        <button type="submit">Update</button>
+
+    </form>
+</body>
+
+</html>
