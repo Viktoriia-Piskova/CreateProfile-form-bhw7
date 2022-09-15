@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/*general positioning and styling of elements*/
+
+body {
+  max-width: 570px;
+  padding: 15px;
+}
+
+form {
+  max-width: 570px;
+  background: #ffffff;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 255px 255px;
+  grid-template-rows: auto 87px 87px 77px;
+}
+
+form input{
+  display: block;
+  border: #e4e4e4 solid 1px;
+  height: 38px;
+  width: 245px;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+#profile-img {
+    margin: 10px;
+}
+
+h1{
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* general special effects*/
+
+form input:hover {
+  border: solid 2px grey;
+}
+
+form input:focus {
+  border: solid 2px blue;
+}
+
+
+form label {
+  margin: 7px;
+}
+
+button {
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  width: 150px;
+  height: 38px;
+  color: #ffffff;
+  margin: 10px;
+}
+
+button:hover{
+  background-color: darkblue;
+}
+
+button:active{
+  background-color: grey;
+}
+
+/* styles for upload file part */
+
+#upload-file {
+    position: relative;
+    grid-column-start: span 2;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+#upload-file>label{
+  display:inline-block;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  width:138px;
+  height: 30px;
+  position: relative;
+
+}
+
+#upload-file p {
+display: block;
+width: 150px;
+font-size: 13px;
+position: absolute;
+top: 35px;
+color: #969696;
+}
+
+#upload-file>label:hover{
+  border: solid 2px grey;
+}
+
+#upload-file>label:active{
+  border: solid 2px blue;
+}
+
+
+#upload-file>img{
+  display: block;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#upload-file>label>img{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+#upload-file #profile-picture{
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+
+
+#deleteFile{
+    width: 30px;
+    height: 30px;
+    display: inline-table;
+    border: #e4e4e4 solid 1px;
+    border-radius: 6px;
+    margin: 7px 3px;
+}
+
+#deleteFile:hover{
+  border: solid 2px grey;
+}
+
+#deleteFile:active{
+  border: solid 2px blue;
+}
+
+#deleteFile>img{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+
+}
+
+
+
+/*styles of every element separately*/
+
+form label {
+  display: block;
+}
+
+#country, option {
+  display: block;
+  border: #e4e4e4 solid 1px;
+  height: 38px;
+  width: 245px;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+#country:hover{
+  border: solid 2px grey;
+}
+
+#country:active{
+  border: solid 2px blue;
+}
+
+
+
+

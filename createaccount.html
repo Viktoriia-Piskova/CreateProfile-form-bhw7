@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Create an Account</title>
+</head>
+
+<body>
+    <h1>
+        Create an Account
+    </h1>
+
+    <form action="">
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+
+
+
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+
+
+        <div class="two-columns">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+            <p>We'll never share your email with anyone else.</p>
+        </div>
+
+        <div id="gender" class="two-columns">
+
+            <div><input id="male" type="radio" name="gender" value="male"> <label for="male">Male</label></div> 
+            <div><input id="female" type="radio" name="gender" value="female"><label for="female">Female</label></div>
+        </div>
+
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="ukraine">Ukraine</option>
+                <option value="france">France</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+        </div>
+
+        <button type="submit">Sign up</button>
+
+    </form>
+
+    <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a
+            href="#">Privacy Policy</a>.</p>
+
+    <hr>
+    <footer>
+        <p>Have an account? <a href="#">Log In</a></p>
+
+        <a href="profile.html">Edit your profile</a>
+    </footer>
+</body>
+
+</html>

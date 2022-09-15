@@ -1,0 +1,187 @@
+/* general settings including hover  and active*/
+
+* {
+  box-sizing: border-box;
+  font-family:'Roboto', sans-serif;
+
+}
+
+body {
+  padding: 36px;
+  max-width: 570px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 20px;
+  column-gap: 12px;
+}
+
+form input {
+  display: block;
+  border: #e4e4e4 solid 1.5px;
+  height: 38px;
+  width: 245px;
+  border-radius: 6px;
+  border-style: solid;
+}
+
+form input:hover {
+  border: solid 1.5px rgb(5, 5, 5);
+}
+
+form input:focus {
+  border: solid 1.5px blue;
+}
+form label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0px;
+  font-weight: 500;
+}
+
+/* styles for double width elements */
+
+form .two-columns,
+button {
+  grid-column: 1 / span 2;
+}
+
+form .two-columns {
+  width: 500px;
+}
+
+input[type="email"] {
+  width: 500px;
+}
+
+/* gender radio button with pseudo selectors*/
+
+#gender * {
+  display: inline-block;
+    margin-right: 50px;
+}
+
+#gender #male,
+#gender #female {
+  display: none;
+
+}
+
+#gender label{
+    position: relative;
+   
+}
+
+#gender div label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px grey solid;
+    border-radius: 50%;
+    margin-bottom: -5px;
+    margin-right: 5px;
+
+}
+
+
+#gender input:checked~label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 6px #007bff solid;
+    border-radius: 50%;
+    margin-bottom: -5px;
+    margin-right: 5px;
+}
+
+/* country select with hover, active*/
+select {
+  display: block;
+  border: #e4e4e4 solid 1.5px;
+  height: 38px;
+  width: 245px;
+  border-radius: 6px;
+  border-style: solid;
+}
+
+
+
+/* submit button styles */
+
+button {
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  height: 38px;
+  text-align: center;
+  color: white;
+}
+
+button:hover{
+    background-color: darkblue;
+}
+
+
+
+/* text under email, text in footer and horisontal line */
+
+.two-columns p{
+    color: #969696;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+body>p{
+    color: #969696;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 50px;
+    line-height: normal;
+}
+
+body>p a{
+    color: #007BFF;
+}
+
+hr{
+    display: block;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 2px;
+    width:500px;
+    background-color: #E4E4E4;
+}
+
+footer p{
+    color: #545454;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    line-height: normal;
+}
+
+footer>p>a{
+    color: #007BFF;
+}
+
+footer>a{
+  display: block;
+  background: #007bff;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  height: 38px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 9px 0px;
+}
